@@ -1,0 +1,24 @@
+Source: redpanda-cpp
+Section: devel
+Priority: optional
+Standards-Version: 4.6.0
+Maintainer: Roy Qu <royqh1979@gmail.com>
+Uploaders:
+ Boyuan Yang <byang@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ qt5-qmake,
+ qtbase5-dev,
+ qttools5-dev,
+ libicu-dev,
+ libqt5svg5-dev,
+Homepage: https://github.com/royqh1979/RedPanda-CPP
+
+Package: redpanda-cpp
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libqt5svg5,
+Description: Lightweight C/C++ IDE based on Qt
+ Redpanda-cpp is a lightweight C/C++ IDE based on Qt, similar to Dev-C++.
